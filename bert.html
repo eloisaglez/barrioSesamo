@@ -15,13 +15,12 @@
 
     }
 
- 
-        body {
-            background-image:url("images/seamless-brick-wall-pattern.png"), url("images/elmo.png");
-            
-        }
-  
 
+body {
+      background-image:url("images/seamless-brick-wall-pattern.png"), url("images/elmo.png");
+            
+}
+  
 
  /*   nav ul a { */
       a {
@@ -108,45 +107,56 @@
         text-shadow: 10px 10px 10px black;
     }
 
-    header h2 {
-        margin: auto;
-        text-align: center;
-        font-size: 30px;
-        color: black;
-        font-family: sesamo;
-        background-color: white;
-        
-    }
-
-    input {
-        width: 80%;
-        padding: 15px;
-        border-radius: 5px;
-        border: 0.5px solid grey;
-    }
-
-    label {
-        display: inline-block;
-        width: 200px;
-        font-size: 18px;
-        margin: 10px auto;
-    }
-
-    [required] {
-        border-color: green;
-        box-shadow: 0px 0px 5px green;
-    }
-
     :invalid {
         border-color: red;
         box-shadow: 0px 0px 5px red
+    } 
+
+    .mainParagraph {
+        margin: 10px;
+        text-align: center;
+        font-size: 1em;
+        padding: 20px 50px 30px 20px;
+        border-radius: 30px;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: green;  
+       
     }
 
-    #canvasWrapper {
-        text-align: center
+            
+    .imagen {
+        display: block; 
+        line-height:0; 
+        font-size: 0;
+        width: 46%;
+        height: 400px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        float: left;
+        border-radius: 100px;
+        box-shadow: 0 0 5px 5px #888;
+        opacity: 0.5;
     }
 
- 
+   
+    .imagen:hover {
+        opacity: 1;
+
+
+    }
+
+    .paragraph { 
+        margin: 10px;
+        text-align: center;
+        font-size: 1em;
+        padding: 20px 50px 30px 20px;
+        border-radius: 30px;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: green;  
+    }
+
 
     footer p {
         font-size: 1.5em;
@@ -155,13 +165,10 @@
         margin-left: 10px
     }
 
-    #btn {
-        width: 50%
-    }
 
     </style>
 
-        <link rel="stylesheet" type="text/css" href="style.css" />
+    /*    <link rel="stylesheet" type="text/css" href="style.css" /> */
 
     </head>
 
@@ -177,34 +184,37 @@
                 <li><a href="https://muppet.fandom.com/wiki/Muppet_Wiki">MORE CHARACTERS</a></li>
             </ul>
         </nav>
-        <h2>This WEB is dedicated to <strong>Sesamo Street </strong>, to remember my childhood.</h2>
+        
     </header>
-    <section id="wrapper">
+    <section>
+        <p class = "mainParagraph"> Bert is Ernie's best friend and roommate on Sesame Street. The pair share the basement apartment at 123 Sesame Street. 
+            In contrast to the practical-joking, extroverted Ernie, Bert is serious, studious, and tries to make sense of his friend's actions. His own passions include reading Boring Stories, 
+            collecting paper clips and bottle caps (especially the rare Figgy Fizz), consuming oatmeal, and studying pigeons. 
+        </p>
+      
+        <div>
+            <img class="imagen" src="images/bert2.jpg" alt = "co-founders">
+        </div>
+        <div>
+            <img class="imagen" src="images/bert4.jfif" alt="charactersSesamo">
 
-     <br>
-     <br>
-   
-        <div class= "clase1">
-            <h2>Titulo</h2>
-            <p>Lorem ipsum dolor sit amet, ad mazim referrentur pro, choro tibique ei eos. Mel no clita omittam
-                suavitate,
-                utinam dictas delectus eu eum. Sint adipisci duo ea. Te inani nullam ridens nec. Assum verear copiosae
-                ad
-                cum.</p>
-            <br /><br />
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/va7jsVHaDyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
         </div>
-        <div class = "clase1">
-            <h2>Titulo</h2>
-            <p>Ei hinc dicant dolorem mea. Usu porro clita ei, vel timeam prodesset ne. Alii elitr ex eum, te sea quis
-                nostrum necessitatibus. Corpora vituperatoribus et eum. Enim eros detracto sit cu, tollit copiosae
-                deterruisset eum ex, unum oratio repudiandae ex eum.</p>
-            <br />
-           <iframe id='audio_2201602' frameborder='0' allowfullscreen='' scrolling='no' height='200' style='width:100%;' src='https://www.ivoox.com/player_ej_2201602_6_1.html'></iframe>
-        </div>
-       
+ <!-- introducto esta etiqueta para que la imagen no herede lo pel párrafo --->
+        <p style="clear: both;"></p>
+
+        <p></p>
+        
+        <p class= "mainParagraph"> Interesting facts: Unfortunately, Bert's nose has fallen off several times during the course of the series.
+            He is left-handed.
+            Bert and Ernie were the first muppets to appear in the pilot episode of Sesame Street.
+            He made one appearance on The Muppet Show: in episode #102 (where he sang Some Enchanted Evening) and in episode #518.
+            Bert was involved as a director in Elmopalooza.
+            
+        </p>
+
+
     </section>
+          
     <footer>
         <p>
             &copy; Copyright by Eloísa González
